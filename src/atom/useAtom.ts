@@ -25,3 +25,4 @@ export const fadeInOutAtom = atom<IFadeInOutAtom>({
 });
 
 export const animationAtom = atom<boolean>(false);
+export const AlreadyAnimatedBlur = atom<boolean>(false);

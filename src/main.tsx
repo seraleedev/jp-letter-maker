@@ -12,6 +12,7 @@ createRoot(document.getElementById("root")!).render(
         theme={{
           token: {
             fontFamily: '"Noto Serif KR", serif',
+            colorPrimary: "#44C3FF",
           },
         }}
       >

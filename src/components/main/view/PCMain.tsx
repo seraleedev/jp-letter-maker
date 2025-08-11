@@ -1,10 +1,15 @@
 import { mainLogic } from "../logic";
 import { FadeOut } from "@/components/animation/fadeout/FadeOut";
 import { Wave } from "@/components/animation/wave/Wave";
+import MailAnimation from "@/components/animation/mail/MailAnimation";
+import { CustomForm } from "@/components/customForm/CustomForm";
 import { Flex } from "antd";
 import Title from "antd/es/typography/Title";
+import { useAtomValue } from "jotai";
+import { animationAtom } from "@/atom/useAtom";
 
 const PCMain = () => {
+  const isAnimating = useAtomValue(animationAtom);
   const { textData, fadeOutDone } = mainLogic();
   const { title } = textData;
   return (
@@ -24,7 +29,11 @@ const PCMain = () => {
               width: 500,
               minHeight: "100vh",
             }}
-          ></Flex>
+          >
+            <MailAnimation isAnimating={isAnimating}>
+              {isAnimating ? <></> : <CustomForm isMobile={false} />}
+            </MailAnimation>
+          </Flex>
         </Flex>
       </Wave>
     </FadeOut>

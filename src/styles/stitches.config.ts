@@ -9,6 +9,7 @@ export const {
     colors: {
       black: "#333",
       blue: "#44C3FF",
+      lightBlue: "#D0F0FF",
     },
     space: {
       xs: "clamp(1.2rem, 1vw, 1.2rem);",
@@ -18,7 +19,7 @@ export const {
       lg: "clamp(2.4rem, 5vw, 4.8rem)",
     },
     shadows: {
-      shadow_black: "0 0 10px rgba(0,0,0,0.8)",
+      shadow_black: "0 0 10px rgba(0,0,0,0.2)",
     },
   },
 });
