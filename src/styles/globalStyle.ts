@@ -22,7 +22,7 @@ export const globalStyles = globalCss({
     color: "inherit",
     fontFamily: `"Noto Serif KR","Noto Serif JP", serif`,
     overflowX: "hidden",
-    "-webkit-font-smoothing": " antialiased",
+    "-webkit-font-smoothing": "antialiased",
     textRendering: "optimizeLegibility",
   },
 

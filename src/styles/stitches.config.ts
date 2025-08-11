@@ -8,6 +8,7 @@ export const {
   theme: {
     colors: {
       black: "#333",
+      blue: "#44C3FF",
     },
     space: {
       xs: "clamp(1.2rem, 1vw, 1.2rem);",
