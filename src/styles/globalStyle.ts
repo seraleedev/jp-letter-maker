@@ -2,14 +2,6 @@ import { globalCss } from "@stitches/react";
 
 export const globalStyles = globalCss({
   "@import": `url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Noto+Serif+KR:wght@200..900&display=swap")`,
-  "@font-face": [
-    {
-      fontFamily: "Jaemin3-Regular",
-      src: `url("/fonts/Jaemin3-Regular.woff2") format("woff2")`,
-      fontStyle: "normal",
-      fontDisplay: "swap",
-    },
-  ],
 
   /*global */
   ":root": {
