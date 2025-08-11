@@ -7,6 +7,8 @@ import { Flex } from "antd";
 import Title from "antd/es/typography/Title";
 import { useAtomValue } from "jotai";
 import { animationAtom } from "@/atom/useAtom";
+import ToggleLang from "@/components/toggleLang/ToggleLang";
+import Paragraph from "antd/es/typography/Paragraph";
 
 const PCMain = () => {
   const isAnimating = useAtomValue(animationAtom);
@@ -17,9 +19,8 @@ const PCMain = () => {
       <Wave>
         <Flex justify="center" align="center" gap={50}>
           <div style={{ textAlign: "center", width: 300 }}>
-            <Title style={{ margin: 0 }} level={2}>
-              {title}
-            </Title>
+            <Title level={2}>{title}</Title>
+            <ToggleLang />
           </div>
 
           <Flex

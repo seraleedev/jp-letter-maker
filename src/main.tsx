@@ -13,6 +13,7 @@ createRoot(document.getElementById("root")!).render(
           token: {
             fontFamily: '"Noto Serif KR", serif',
             colorPrimary: "#44C3FF",
+            borderRadius: 3,
           },
         }}
       >
