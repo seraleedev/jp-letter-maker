@@ -9,7 +9,7 @@ function App() {
   globalStyles();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/jp-letter-maker">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
