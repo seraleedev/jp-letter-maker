@@ -1,6 +1,6 @@
 import { globalStyles } from "./styles/globalStyle";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from "./pages/MainPage";
+import MainPage from "./pages/Mainpage";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
 import ResultPage from "./pages/ResultPage";
