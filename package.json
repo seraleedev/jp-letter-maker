@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "copy-404": "Copy-Item -Path dist\\index.html -Destination dist\\404.html -Force",
+    "copy-404": "cpy dist/index.html dist/404.html",
     "deploy": "npm run copy-404 && gh-pages -d dist"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react-swc": "^3.10.2",
+    "cpy-cli": "^5.0.0",
     "eslint": "^9.30.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
