@@ -32,10 +32,14 @@ export const PCMailContent = forwardRef<HTMLDivElement, {}>((_, ref) => {
       </MailTextArea>
 
       <Helmet>
-        <link rel="preload" as="image" href="/img/bg_mail.webp" />
+        <link
+          rel="preload"
+          as="image"
+          href={`${import.meta.env.BASE_URL}/img/bg_mail.webp`}
+        />
       </Helmet>
       <ResponsiveImage
-        src={`/img/bg_mail.webp`}
+        src={`${import.meta.env.BASE_URL}/img/bg_mail.webp`}
         alt="mail_background"
         width={"100%"}
         height="auto"

@@ -14,7 +14,11 @@ const PCResult = () => {
   return (
     <FadeIn>
       <Helmet>
-        <link rel="preload" as="image" href="/img/brush_texture.webp" />
+        <link
+          rel="preload"
+          as="image"
+          href={`${import.meta.env.BASE_URL}/img/brush_texture.webp`}
+        />
       </Helmet>
       <TextureBg>
         {showBlurText && <BlurText value={mailGetText} />}

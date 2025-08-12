@@ -9,7 +9,7 @@ export const MailWrapper = styled(Flex, {
 
 export const MobileMailWrapper = styled(Flex, {
   width: "100%",
-  background: `url(/img/bg_paper.webp) center center/cover no-repeat`,
+  background: `url(${import.meta.env.BASE_URL}/img/bg_paper.webp) center center/cover no-repeat`,
   padding: "30px 0",
   minHeight: "60vh",
 });
