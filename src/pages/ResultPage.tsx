@@ -1,6 +1,6 @@
 import { useDeviceType } from "@/hooks/useDevice";
-import PCResult from "@/components/result/PCResult";
-import MobileResult from "@/components/result/MobileResult";
+import PCResult from "@/components/result/view/PCResult";
+import MobileResult from "@/components/result/view/MobileResult";
 import { formAtom } from "@/atom/useAtom";
 import { useAtomValue } from "jotai";
 import { initialData } from "@/config/static";

@@ -20,6 +20,7 @@ export const {
     },
     shadows: {
       shadow_black: "0 0 10px rgba(0,0,0,0.2)",
+      shadow_blue: "0 0 10px rgba(68,195,255,0.8)",
     },
   },
 });
