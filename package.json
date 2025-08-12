@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "copy-404": "Copy-Item -Path dist\\index.html -Destination dist\\404.html -Force",
+    "deploy": "npm run copy-404 && gh-pages -d dist"
   },
   "dependencies": {
     "@stitches/react": "^1.2.8",
