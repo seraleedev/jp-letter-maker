@@ -27,7 +27,12 @@ const PCResult = () => {
       </TextureBg>
       {showMail && (
         <Space style={{ zIndex: 100 }}>
-          <Button variant="link" color="default" href="/" size="large">
+          <Button
+            variant="link"
+            color="default"
+            href={`${import.meta.env.BASE_URL}`}
+            size="large"
+          >
             {goFirst}
           </Button>
           <Button

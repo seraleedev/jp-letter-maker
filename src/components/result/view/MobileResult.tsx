@@ -26,7 +26,7 @@ const MobileResult = () => {
           <Button
             variant="link"
             color="default"
-            href="/"
+            href={`${import.meta.env.BASE_URL}`}
             size="large"
             block
             style={{ marginTop: 20 }}
